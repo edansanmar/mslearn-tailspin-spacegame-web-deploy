@@ -108,7 +108,7 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameTest)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+              package: '/home/vsts/work/1/drop/Release/Tailspin.SpaceGame.Web.zip'
 
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
