@@ -134,7 +134,7 @@ stages:
               resourceGroupName: 'tailspin-space-game-rg'
               slotName: 'swap'
               appName: '$(WebAppNameStaging)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+              package: '/home/vsts/work/1/drop/Release/Tailspin.SpaceGame.Web.zip' 
           - task: AzureAppServiceManage@0
             displayName: 'Swap deployment slots'
             inputs:
